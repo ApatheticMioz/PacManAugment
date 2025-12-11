@@ -1,0 +1,74 @@
+Computer Organization and Assembly Language Lab
+Pac Man Game Project Rubrics
+Level no.
+
+Level 1
+
+Level 2
+
+Level 3
+
+File
+Handling
+Bonuses
+Creativity
+
+Feature
+1. 1st page – Name of game ----- 2 marks
+2. Name of user (as an input) ----- 3 marks
+3. 2nd page – Menu ------5 marks
+4. Pause screen ----- 3 marks
+5. Instruction’s screen ----- 2 marks
+6. 3rd page – Game Setup----- 3 marks
+7. Lives displayed and update if lost ----- 2 marks
+8. Maze layout ------ 2 marks
+9. Pac Man movement ------ 3 marks
+10. Ghost and its movements----- 5 marks
+11. Collection of dots and then disappeared after collection
+----- 5 marks
+12. Score displayed on screen (update after dots collection)
+----- 5 marks
+1.
+2.
+3.
+4.
+1.
+2.
+
+Complex maze layout ------ 5 marks
+Ghost’s complex behavior ----- 5 marks
+Bonus appearance in the form of fruits ----- 5 marks
+Eating fruit bonuses adds extra score ----- 5 marks
+Complex maze layout --- 3 marks
+Fixed obstacles, hidden shortcuts, teleportation paths ---- 2 marks
+3. Addition of 2 new ghosts ------ 5 marks
+4. Display end screen (username and score) ----- 3 marks
+5. Speed -------2 marks
+In sorted way
+1. Names (of all users) ------ 5 marks
+2. Scores (of all users) ------5 marks
+3. Level no. (of all users) ----- 5 marks
+
+Total
+Marks
+
+40 marks
+
+20 marks
+
+15 marks
+
+15 marks
+
+5 marks for each bonus feature
+1- Sound ------ 5 marks
+
+10 marks
+
+2- The more creative, the more marks you get------ 5 marks
+
+Contribution Percentage contribution
+
+-
+
+

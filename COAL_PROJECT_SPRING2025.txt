@@ -1,0 +1,240 @@
+PacMan Game
+Instructions
+
+
+User Interface is important in this project. Try to develop an attractive user interface.
+
+
+
+Use of extra features in the project is encouraged.
+
+
+
+Use good programming practices (well commented and indented code, meaningful variable
+names, readable code etc.).
+
+
+
+Student submit the project in Zip File.
+
+
+
+
+
+
+
+
+
+FORMAT: RollNo_Name_Section.zip.
+
+Evaluation Criteria will be shared with you soon. This project is individual based.
+You need to submit video of your full game
+You can use Irvine library only for inputs and graphics other than that you will be awarded
+with zero marks.
+You are not allowed to use directives (e.g., if else, while)
+Project Deadline: Monday, 5 May, 2025
+You must understand every line of code you write in the project. During the demo, you will
+be required to explain your code and write any part of it if asked. Failure to do so will result in
+zero marks for the project or an F grade in the course. Therefore, do the project yourself to
+ensure fair evaluation.
+
+
+
+A submission that is 1 day late will incur a 15% deduction.
+
+
+
+A submission that is 2 days late will incur a 35% deduction.
+
+
+
+No evaluation will be conducted after 2 days from the deadline.
+
+
+
+Copy/cheating and code copy from any AI Source will be awarded an “F” grade in the
+course.
+
+Introduction
+The goal of this project is to implement a classic Pac-Man game using Assembly language (8086) in
+Visual Studio. The game will consist of three levels, each with unique features, challenges, and
+objectives. Students will need to demonstrate their understanding of Assembly language
+programming, game logic, and graphics manipulation.
+Players embark on their Pac-Man journey with three lives. Losing a life occurs when Pac-Man
+collides with a ghost or faces specific challenges within the maze. The inclusion of lives adds an
+extra layer of strategy, emphasizing the importance of careful navigation and strategic use of
+power pellets. You are required to draw the levels and the full functionality for the pac man. It
+includes the movement of the player the movement of ghost i.e. ai movement. The wall is around
+the ground as shown in images below.
+
+LEVEL
+Level 1: The Beginning
+1.
+
+Maze Layout:
+
+The first level introduces players to a straightforward maze layout characterized by simple paths
+and walls. The maze is designed to be easily navigable, allowing players to familiarize themselves
+with Pac-Man's movement dynamics.
+
+2.
+
+Ghost Behavior:
+
+Ghosts in this level exhibit basic behavior, primarily focusing on chasing Pac-Man. Their
+movements are predictable, providing players with a manageable introduction to ghost interactions.
+
+3.
+
+Objective:
+
+The primary goal of Level 1 is for Pac-Man to collect all the dots scattered throughout the maze.
+Unlike subsequent levels, there are no power pellets introduced at this stage, emphasizing the
+fundamental mechanics of dot collection.
+
+4.
+
+Lives:
+
+Players begin their Pac-Man journey with three lives. Losing a life occurs when Pac-Man collides
+with a ghost.
+
+5.
+
+Level Design Rationale:
+
+Level 1 serves as an introductory phase, allowing players to grasp the fundamental mechanics of
+the game. The straightforward maze layout and basic ghost behavior provide a gentle learning
+curve, setting the foundation for more complex challenges in the following levels.
+
+Level 2: The Challenge
+6.
+
+Maze Layout:
+
+The second level ramps up the complexity with additional walls, paths, and strategically placed
+fruit bonuses. The maze design requires players to navigate more carefully and consider new
+challenges.
+
+7.
+
+Ghost Behavior:
+
+Ghosts in Level 2 exhibit more diverse behaviors, introducing the concept of cutting off Pac- Man's
+path. Pinky, a new ghost, adds complexity by employing unpredictable movements and ambushing
+strategies.
+
+8.
+
+Objective:
+
+In addition to collecting dots, Pac-Man must strategically eat fruit bonuses for extra points. Power
+pellets are introduced, providing Pac-Man with the ability to temporarily eat ghosts.
+
+9.
+
+Lives:
+
+Players still start with three lives. Colliding with a ghost or facing specific challenges within the
+maze results in the loss of a life.
+
+10.
+
+Level Design Rationale:
+
+Level 2 challenges players with a more intricate maze layout and varied ghost behaviors. The
+introduction of power pellets adds a strategic layer to the game, requiring players to plan their
+movements to maximize points. The inclusion of three lives continues to emphasize the importance
+of careful navigation. In this Level there will addon ball upon eating which player will be able to
+kill ghost and add some points on each killing and ghost revert back to its initial point. Remember
+that these points are for some time i.e., when player eat that addon he/she will be able to kill only
+for 20 secs.
+
+Level 3: The Showdown
+11.
+
+Maze Layout:
+
+Level 3 reaches the pinnacle of complexity, featuring teleportation paths, hidden shortcuts, and
+additional obstacles. The maze design demands advanced navigation skills from players.
+
+12.
+
+Ghost Behavior:
+
+Ghosts in Level 3 exhibit diverse and coordinated behaviors, making it significantly more
+challenging for Pac-Man. Inky and Clyde, new ghosts, introduce unique and complex strategies
+that require strategic planning from the player.
+
+13.
+
+Objective:
+
+Pac-Man faces the ultimate challenge, navigating a complex maze while collecting dots, eating fruit,
+and avoiding advanced ghost behaviors. Higher point values are assigned for collecting dots and
+eating ghosts. The level culminates in a showdown with a boss ghost with unique behavior.
+
+14.
+
+Lives:
+
+Players still start with three lives. Losing a life occurs when Pac-Man collides with a ghost or faces
+challenges within the maze.
+
+15.
+
+Level Design Rationale:
+
+Level 3 serves as the climax of the game, pushing players to their limits with intricate maze layouts
+and advanced ghost behaviors. The introduction of a boss ghost adds a unique twist, requiring
+players to adapt their strategies. The continued inclusion of three lives emphasizes the ongoing
+challenge of avoiding ghosts and completing the game. In this level there will be like cherry upon
+eating that we will be able to increase the player live by one.
+
+File Handling
+You are required to store all the score of all the players that have played the game in sorted
+way. For this you will use file handling. You need to store the name and updated highest score in
+a file.
+
+Important Rules
+
+
+
+
+
+
+
+
+The walls you created in the picture below should be on your roll number i.e.,
+suppose your roll number is 2583 so you go to only five i.e., 2553 so in the above
+there is 2 block then five the again five and then 3
+The screen size is 640x480.
+You should set the third level zombies/ghost to be more faster
+This is an individual project, and you will be evaluated based on the
+demonstration that you gave.
+You must make sure that all the exceptions have been handled (e.g. Input
+provided in wrong format is not processed.
+You must use the procedures and the parameters are passed through the push and pop in
+stack.
+
+You are required to use sound features for your game.
+
+Screens
+The following screens are given as an example. You can create your own screens which
+would include:
+Welcome Screen that takes your name input
+Game Menu screen
+Main Screen for GamePlay
+Pause Screen/Functionality
+Instructions Screen
+High Score and Players Names Display
+
+Main Screen for Game Play
+
+Above is the example representation how the game should look like the blue lines represent
+the wall. The “X” represents the player and dot represent the eatable. You can use these types
+of graphics in your game.
+
+To better understand the game please follow the link below https://freepacman.org/
+
+
