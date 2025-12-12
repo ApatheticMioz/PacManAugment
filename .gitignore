@@ -2,13 +2,19 @@
 Debug/
 Release/
 x64/
+x86/
 bin/
 build/
 out/
+dist/
+
+# Compiled binaries
+*.exe
+*.o
+*.obj
+*.out
 
 # Intermediate files
-*.obj
-*.exe
 *.ilk
 *.pdb
 *.idb
@@ -28,6 +34,8 @@ out/
 
 # Visual Studio user/state
 .vs/
+.vscode/
+.idea/
 *.VC.db
 *.VC.VC.opendb
 *.suo
@@ -49,7 +57,16 @@ __pycache__/
 # OS noise
 .DS_Store
 Thumbs.db
+*.swp
 
-# Large or local artifacts
+# Archives
 *.zip
+*.rar
+*.7z
+*.tar.gz
+
+# Large media
 *.mp4
+
+# Runtime data
+highscores.txt
