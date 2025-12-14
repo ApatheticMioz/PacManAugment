@@ -1,44 +1,71 @@
 # 8086 Pac-Man Adventure
 
-Assembly-language Pac-Man clone for 32-bit Windows built with MASM and the Irvine32 library. The game ships three handcrafted maze levels, ghost AI with multiple states, power pellets, fruit bonuses, teleporters, and basic sound effects.
+An assembly-language Pac-Man clone for 32-bit Windows built with MASM and the Irvine32 library. Features three handcrafted maze levels, ghost AI with multiple states, power pellets, fruit bonuses, teleporters, and basic sound effects.
+
+> **Status:** Archived
 
 ## Features
-- Three maze layouts (intro, challenge, advanced) with power pellets, fruits, and teleport pads
-- Ghost AI states (normal, scared, eaten) plus collision handling, lives, and respawn
-- Dot and fruit collection with score tracking, level completion, and game over screens
-- Menu, instructions, pause, and high-score views with name input and status bar updates
-- Sound effects via Win32 `MessageBeep` and Irvine32 helpers; highscores persisted in `highscores.txt`
 
-## Tech Stack
-- Language: x86 assembly (MASM, 32-bit)
-- Toolchain: Visual Studio v143 toolset with MASM build customizations
-- Libraries: Irvine32 (expected in `c:\Irvine`), Win32 console APIs, `user32.lib`
+- **Three Maze Layouts** — Intro, challenge, and advanced levels with increasing difficulty
+- **Ghost AI** — Normal hunting mode, scared/vulnerable state, and eaten state with respawn
+- **Power Pellets** — Collect to make ghosts vulnerable for a limited time
+- **Fruit Bonuses** — Appear for extra points
+- **Teleporters** — Wrap from one side of the maze to the other (Level 3)
+- **Score System** — Points scale with level, persistent high scores
+- **Sound Effects** — Win32 MessageBeep for game events
+- **Menu System** — Level selection, instructions, high scores
+
+## Project Structure
+
+```
+.
+├── code.asm              # Main game source (all logic integrated)
+├── PacManAugment.vcxproj # Visual Studio project file
+├── .editorconfig         # Editor configuration
+├── .gitignore            # Git ignore rules
+├── CHANGELOG.md          # Version history
+├── CONTRIBUTING.md       # Contribution guidelines
+├── LICENSE               # MIT License
+└── README.md             # This file
+```
 
 ## Prerequisites
-- Visual Studio (Desktop development with C++)
-- MASM build tools and Irvine32 library installed to `c:\Irvine`
-- Windows console capable of 80x25 text
+
+- **Visual Studio** — Desktop development with C++ workload
+- **MASM** — Microsoft Macro Assembler (included with VS)
+- **Irvine32 Library** — Installed to `c:\Irvine` ([download](https://kipirvine.com/asm/))
+- **Windows** — 32-bit console capable of 80×25 text mode
 
 ## Build
-From a Developer Command Prompt:
+
+Open a **Developer Command Prompt** and run:
 
 ```bat
 msbuild PacManAugment.vcxproj /p:Configuration=Debug /p:Platform=Win32
 ```
 
-Artifacts land under `Debug/` by default (e.g., `Debug\PacManAugment.exe`).
+The executable will be output to `Debug\PacManAugment.exe`.
 
 ## Run
-Launch the built executable from the project root:
+
+From the project root:
 
 ```bat
 Debug\PacManAugment.exe
 ```
 
 ## Controls
-- Arrow keys: move Pac-Man
-- P: pause/resume
-- ESC: return to menu
+
+| Key | Action |
+|-----|--------|
+| ↑ ↓ ← → | Move Pac-Man |
+| P | Pause / Resume |
+| ESC | Return to menu |
 
 ## High Scores
-Scores persist in `highscores.txt` in the project root. The game reads/writes this file directly as simple text entries.
+
+Scores are automatically saved to `highscores.txt` in the working directory when a game ends. This file is created on first run and updated with each new score.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
